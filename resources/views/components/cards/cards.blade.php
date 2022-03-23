@@ -4,6 +4,7 @@
         <div class="col-4">
             @component('components.card.card',
             [
+                'image'=> "https://www.capitalone.co.uk/cloud_assets/png/hp-3Dcard.png",
                 'title'=> "Title  {$i}",
                 'desc'=> "Desc  {$i}",
                 ])
@@ -12,3 +13,4 @@
         @endfor
     </div>
 </div>
+<p></p>
