@@ -21,7 +21,7 @@
         </div>
     </div>
     <div class="container">
-        <div class="row">
+        <div class="row d-flex align-items-center mb-5 ">
                 @component('components.content.contentImage',[
                     'images'=>$imagesText
                 ])
