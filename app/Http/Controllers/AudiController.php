@@ -29,4 +29,9 @@ class AudiController extends Controller
             'imagesCard'=>$imagesCard
         ]);
     }
+    public function aboutUs()
+    {
+
+        return view('audi.aboutUs');
+    }
 }
