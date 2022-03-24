@@ -15,7 +15,9 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                @component('components.cards.cards')
+                @component('components.cards.cards',[
+                    'images' =>$imagesCard
+                ])
                 @endcomponent
             </div>
         </div>
@@ -28,5 +30,4 @@
                 @endcomponent
         </div>
     </div>
-
 @endsection

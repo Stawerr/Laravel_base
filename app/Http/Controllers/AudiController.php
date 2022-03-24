@@ -18,9 +18,15 @@ class AudiController extends Controller
             'https://media.gettyimages.com/photos/audi-a4-quattro-sedans-picture-id459005525?s=2048x2048',
             'https://media.gettyimages.com/photos/audi-a4-quattro-sedans-picture-id459005525?s=2048x2048'
         ];
+        $imagesCard=[
+            'https://www.capitalone.co.uk/cloud_assets/png/hp-3Dcard.png',
+            'https://www.capitalone.co.uk/cloud_assets/png/hp-3Dcard.png',
+            'https://www.capitalone.co.uk/cloud_assets/png/hp-3Dcard.png'
+        ];
         return view('audi.index',[
             'imagesCarousel'=>$imagesCarousel,
-            'imagesText'=>$imagesText
+            'imagesText'=>$imagesText,
+            'imagesCard'=>$imagesCard
         ]);
     }
 }

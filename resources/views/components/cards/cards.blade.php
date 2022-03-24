@@ -1,16 +1,16 @@
 <div class="container pt-5">
     <div class="row">
-        @for($i=0;$i<3;$i++)
+        @foreach($images as $image)
         <div class="col-4">
             @component('components.card.card',
             [
-                'image'=> "https://www.capitalone.co.uk/cloud_assets/png/hp-3Dcard.png",
-                'title'=> "Title  {$i}",
-                'desc'=> "Desc  {$i}",
+                'image'=> $image,
+                'title'=> "Title  {$loop->index}",
+                'desc'=> "Desc  {$loop->index}",
                 ])
             @endcomponent
         </div>
-        @endfor
+        @endforeach
     </div>
 </div>
 <p></p>
