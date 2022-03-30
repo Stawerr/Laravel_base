@@ -11,6 +11,8 @@ class PostsTableSeeder extends Seeder
      */
     public function run()
     {
+        factory(\App\Post::class,50)->create();
+        /*
         \DB::table('posts')->insert([
             'title'       => 'First Title',
             'description' => 'First Post Description',
@@ -19,5 +21,6 @@ class PostsTableSeeder extends Seeder
             'slug'        => 'first-post',
             'user_id'     => 1,
         ]);
+        */
     }
 }
