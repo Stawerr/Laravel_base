@@ -21,8 +21,7 @@ $factory->define(Address::class, function (Faker $faker) {
     return [
         'address' => $faker->address,
         'city' => $faker->city,
-        'country' => $faker->country,
         'postal_code' => $faker->postcode,
-
+        'country_id' => rand(1, 140)
     ];
 });
