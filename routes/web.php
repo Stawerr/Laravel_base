@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 Route::get('audi','AudiController@index');
 Route::get('aboutus','AudiController@aboutUs');
+Route::get('/players','PlayerController@index');
 //Route::get('hello-world','HelloWorldController@index');
 
 //Route::get('/', function () {return view('welcome');});
