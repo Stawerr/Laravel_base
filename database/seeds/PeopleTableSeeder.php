@@ -18,7 +18,8 @@ class PeopleTableSeeder extends Seeder
         \DB::table('people')->insert([
             'name'       => 'User'.$i,
             'date_of_birth' => '1995-01-16',
-            'email'     => 'email'.$i.'@email.pt'
+            'email'     => 'email'.$i.'@email.pt',
+            'address_id'     => rand(1, 200)
         ]);
         }
 

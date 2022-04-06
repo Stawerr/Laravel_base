@@ -15,6 +15,7 @@ class CreatePeopleTable extends Migration
     {
         Schema::create('people', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('address_id')->constrained();
             $table->string('name');
             $table->date('date_of_birth');
             $table->string('email');
