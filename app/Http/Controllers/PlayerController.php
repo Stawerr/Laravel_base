@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Player;
+use App\Car;
 use Illuminate\Http\Request;
 
 class PlayerController extends Controller
@@ -15,6 +16,7 @@ class PlayerController extends Controller
     public function index()
     {
         $players = Player::all();
+
         return view('pages.players.index',['players'=>$players]);
 
     }

@@ -7,7 +7,7 @@ use Faker\Generator as Faker;
 
 $factory->define(Car::class, function (Faker $faker) {
     return [
-        'name'       => $faker->userName,
+        'name' => $faker->userName,
         'color'=> $faker->colorName,
         'player_id'=>rand(1, 100)
     ];

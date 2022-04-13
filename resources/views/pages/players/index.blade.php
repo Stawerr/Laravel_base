@@ -3,7 +3,7 @@
 @section('content')
 
     @component('components.table.table', [
-                       'players' =>$players
+                       'players' =>$players,
                    ])
     @endcomponent
 
