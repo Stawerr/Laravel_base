@@ -7,7 +7,7 @@
         <th scope="col">Birth Date</th>
         <th scope="col">Car</th>
         <th scope="col">Address</th>
-
+        <th scope="col">Actions</th>
     </tr>
     </thead>
     <tbody>
@@ -22,6 +22,9 @@
             @endforeach
             </td>
             <td><p>{{$player->address->address}}</p> <p>{{$player->address->country->name}}</p> </td>
+            <td>
+                <a href="{{url('players/'.$player->id)}}">Show </a>
+            </td>
         </tr>
     @endforeach
     </tbody>
