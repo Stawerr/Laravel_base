@@ -17,6 +17,7 @@ class CreatePlayersTable extends Migration
             $table->id();
             $table->string ("name");
             $table->date ("birth_date");
+            $table->foreignId('address_id')->constrained();
             $table->timestamps();
         });
     }

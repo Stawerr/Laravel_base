@@ -6,6 +6,7 @@
         <th scope="col">Name</th>
         <th scope="col">Birth Date</th>
         <th scope="col">Car</th>
+        <th scope="col">Address</th>
     </tr>
     </thead>
     <tbody>
@@ -16,9 +17,10 @@
             <td>{{$player->birth_date}}</td>
             <td>
             @foreach($player->cars as $car)
-                {{$car->name}}
+                <p>{{$car->name}}</p>
             @endforeach
             </td>
+            <td>{{$player->address->address}}</td>
         </tr>
     @endforeach
     </tbody>

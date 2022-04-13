@@ -10,4 +10,8 @@ class Player extends Model
     {
         return $this->hasMany('App\Car');
     }
+    public function address()
+    {
+        return $this->belongsTo('App\Address');
+    }
 }
