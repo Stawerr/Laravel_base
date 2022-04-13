@@ -10,4 +10,8 @@ class Address extends Model
     {
         return $this->hasOne('App\Player');
     }
+    public function country()
+    {
+        return $this->belongsTo('App\Country');
+    }
 }

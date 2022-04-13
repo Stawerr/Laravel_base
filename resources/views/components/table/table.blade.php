@@ -7,6 +7,7 @@
         <th scope="col">Birth Date</th>
         <th scope="col">Car</th>
         <th scope="col">Address</th>
+
     </tr>
     </thead>
     <tbody>
@@ -20,7 +21,7 @@
                 <p>{{$car->name}}</p>
             @endforeach
             </td>
-            <td>{{$player->address->address}}</td>
+            <td><p>{{$player->address->address}}</p> <p>{{$player->address->country->name}}</p> </td>
         </tr>
     @endforeach
     </tbody>
